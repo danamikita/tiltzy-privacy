@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tiltzy — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6em; }
+  .updated { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — Tiltzy</h1>
+<p class="updated">Last updated: November 5, 2026</p>
+
+<p>Tiltzy is a tilt-to-guess party game. It has no account system and no sign-in — there is nothing to log into, and we never see your name, email address, or any other personal identifier.</p>
+
+<h2>The on-device tier (default)</h2>
+<p>By default, decks are generated entirely on your device using a local AI model (Gemma, run on-device via Google's LiteRT-LM runtime). In this mode, nothing you type is ever sent anywhere. The model file itself (~a few hundred MB) is downloaded once through Google Play's Asset Delivery service, the same system Android uses for app updates — that download doesn't include anything you've typed or played.</p>
+
+<h2>The optional cloud tier</h2>
+<p>If you switch to the cloud tier (used for harder/higher-quality decks, and for Image mode), the topic you type and a few generation settings (difficulty, format, and which words to avoid repeating) are sent to our backend, which forwards your topic text to Anthropic's Claude API to generate the deck, and — for Image mode — to OpenAI's image API to generate accompanying images. These providers process that text/image request on our behalf and under their own privacy terms; we don't send them your name or any other personal identifier, only the topic text itself.</p>
+
+<h2>What our backend stores</h2>
+<table style="border-collapse: collapse; width: 100%;">
+<tr><th align="left" style="border-bottom:1px solid #ccc; padding:4px 8px 4px 0;">Data</th><th align="left" style="border-bottom:1px solid #ccc; padding:4px 8px;">Why</th><th align="left" style="border-bottom:1px solid #ccc; padding:4px 0;">Shared?</th></tr>
+<tr><td style="padding:4px 8px 4px 0;">A random device ID, generated on your device (no login)</td><td style="padding:4px 8px;">Tracks your free-credit balance and any credit packs you've purchased</td><td style="padding:4px 0;">No</td></tr>
+<tr><td style="padding:4px 8px 4px 0;">Google Play purchase tokens for credit packs</td><td style="padding:4px 8px;">Prevents the same purchase from being credited twice</td><td style="padding:4px 0;">Verified with Google's Play Developer API only</td></tr>
+<tr><td style="padding:4px 8px 4px 0;">Generated deck text and images</td><td style="padding:4px 8px;">Cached so repeat/common topics don't have to be regenerated; not tied to your device ID</td><td style="padding:4px 0;">No</td></tr>
+</table>
+
+<p>We don't collect analytics, crash reports, or advertising data of any kind, and Tiltzy contains no ads.</p>
+
+<h2>Permissions</h2>
+<p>Tiltzy requests only the Internet permission, used solely for the optional cloud tier and the one-time on-device model download described above.</p>
+
+<h2>Requesting deletion of your data</h2>
+<p>Because there's no account, we can't verify a deletion request automatically. To request deletion, email <a href="mailto:mikitad@gmail.com">mikitad@gmail.com</a> with your device ID (shown in the app's settings) — we'll permanently delete your device's credit-ledger record (balance and purchase history) within a few days. On-device data (your saved decks, skin choice) is deleted simply by uninstalling the app.</p>
+
+<h2>Children's privacy</h2>
+<p>Tiltzy is not directed at children and does not knowingly collect personal information from anyone, regardless of age.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, an updated version will be published at this same address with a new "Last updated" date above.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the app: <a href="mailto:mikitad@gmail.com">mikitad@gmail.com</a>.</p>
+</body>
+</html>
